@@ -17,9 +17,12 @@
   <script>
     
     var ui = document.querySelector("#ui");
+    var text = "Nicolo'";
     
     for(let n=0; n < 40; n++) {
       var elem = document.createElement("div");
+      elem.setAttribute('class', 'text');
+      elem.insertHTML = text;
       ui.appendChild(elem);
     }
     
